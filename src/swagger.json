@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "SOLID Documentation",
+        "description": "This is SOLID exam documentation",
+        "version": "1.0.0",
+        "contact": {
+            "email": "phablovilasboas25@gmail.com.br"
+        }
+    },
+    "paths": {
+        "/users": {
+            "post": {
+                "tags": ["Users"],
+                "summary": "Create a user",
+                "description": "Create a new user"
+            },
+            "get": {
+                "tags": ["Users"],
+                "summary": "Fetch users",
+                "description": "Fetching users"
+            }
+        },
+        "users/:id/admin": {
+            "patch": {
+                "tags": ["Users"],
+                "summary": "Turn admin",
+                "description": "Turning user as admin"
+            }
+        },
+        "users/:id": {
+            "patch": {
+                "tags": ["Users"],
+                "summary": "Fetch user",
+                "description": "Fetching user by id"
+            }
+        }
+    }
+}
